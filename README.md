@@ -1,7 +1,7 @@
 # Oracle-Out-of-host-capacity
 Script to solve the problem of "out of host capacity" on Oracle Cloud while creating A1 Instances.
 
-# Install
+# Installation python and packeges
 
 Install virtualenv:
 ```
@@ -19,19 +19,28 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-# Set up environmets
+# Generating API key and saving configuration
+
+Full instruction: https://github.com/hitrov/oci-arm-host-capacity#generating-api-key
+
+Save API key. 
+
+Save configuration file to the file `~/.oci/config` and setup `key_file` as path to the API key.
+
+# Setting up instance parameters
 
 Create .env file
 ```
 cp .env.example .env
 ```
 
-Fill out all variables like described here: https://github.com/hitrov/oci-arm-host-capacity
+Get all variables for the instance like described here: https://github.com/hitrov/oci-arm-host-capacity#instance-parameters
 
-# Run
+# Runing
 
 ```
 python main.py
 ```
 
-# Wait
+# Waiting
+...
